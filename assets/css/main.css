@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a, a:hover{
+    text-decoration: none;
+}
+section, header, footer {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+#title {
+    margin-bottom: 17px;
+}
+.font-h3-black {
+    font-size: 40px;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 47px;
+}
+.font-h3 {
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 47px;
+    
+}
+.font-h2 {
+    letter-spacing: 0.3px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+.tem-bg {
+    background-image: url(../imgs/main-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1172px;
+    }
+}
+/*Header*/
+header {
+    width: auto;
+    height: 100%;
+}
+#logo {
+    position: absolute;
+    z-index: 2;
+}
+@media only screen and (max-width:830px) {
+    #logo {
+        display: none;
+    }
+    .navbar {
+        height: initial !important;
+        padding-left: 5% !important;
+        
+    }
+    .navbar-toggler {
+        border: none !important;
+    }
+}
+/*Alterações no navbar Bootstrap*/
+.bg-light {
+    background-color: transparent !important;
+    background-image: url(../imgs/bg-menu.jpg);
+    background-repeat: no-repeat;
+    background-position: 50.1% 0;
+}
+.navbar {
+    text-transform: uppercase;
+    align-items: center;
+    padding-left: 27%;
+    height: 78px;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+}
+.nav-item {
+    padding-right: 15px;
+}
+/*banner-topo*/
+.banner-principal {
+    height: 810px;
+}
+.bg-header {
+    background-image: url(../imgs/banner-principal.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 100%;
+}
+.content-banner {
+    padding: 20% 0 0 0%;
+    display: block;
+    max-width: 35rem;
+}
+.btn-scrooll-banner {
+    position: absolute;
+    top: 83%;
+    left: 47%;
+}
+/*section SERVICOS*/
+.servicos {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.servicos .container div{
+    display: block !important;
+    text-align: center !important;
+}
+
