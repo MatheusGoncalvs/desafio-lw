@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="owl/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="owl/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" type="text/css">
 </head>
 
 <body>
@@ -70,26 +72,37 @@
                 <div class="row">
                     <h3 class="font-h3-black">Serviços</h3>
                 </div>
-                <div class="row">
-                    <span>
-                        <img src="assets/imgs/btn-servicos-carousel-left.png">
-                    </span>
-                    <span>
-                        <img src="assets/imgs/img1-servicos-carousel.png">
-                    </span>
-                    <span>
-                        <img src="assets/imgs/img2-servicos-carousel.png">
-                    </span>
-                    <span>
-                        <img src="assets/imgs/img2-servicos-carousel.png">
-                    </span>
-                    <span>
-                        <img src="assets/imgs/btn-servicos-carousel-right.png">
-                    </span>
+                <div class="row owl-carousel carousel">
+                    <a href="">
+                        <div class="img-servicos">
+                            <h3 class="titulo-servicos">Serviço número 1<br />Etc e tal</h3>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="img-servicos">
+                            <div class="mask-img-servicos">
+                                <div class="texto1">
+                                    <h3 class="titulo-servicos">Serviço número 2<br />Etc e tal</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="img-servicos">
+                            <h3 class="titulo-servicos">Serviço número 3<br />Etc e tal</h3>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="img-servicos">
+                            <h3 class="titulo-servicos">Serviço número 4<br />Etc e tal</h3>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
     </main>
+
+    </script>
     <!--Scripts-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -100,6 +113,30 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <script src="owl/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+    <script src="owl/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <!--Carousel-->
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 3
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>
