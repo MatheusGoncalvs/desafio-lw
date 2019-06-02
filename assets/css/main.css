@@ -23,6 +23,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 a, a:hover{
     color: #fff;
@@ -35,6 +36,21 @@ section, header, footer {
 }
 #title {
     margin-bottom: 17px;
+}
+.font-h2 {
+    letter-spacing: 0.3px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+.font-h2-small {
+    letter-spacing: 0.3px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+h3 {
+    font-size: 20px;
 }
 .font-h3-black {
     font-size: 40px;
@@ -51,11 +67,9 @@ section, header, footer {
     line-height: 47px;
     
 }
-.font-h2 {
-    letter-spacing: 0.3px;
-    font-size: 20px;
-    font-weight: 400;
-    color: #fff;
+.font-h4 {
+    color: white;
+    font-size: 15px;
 }
 .tem-bg {
     background-image: url(../imgs/main-bg.jpg);
@@ -67,41 +81,30 @@ section, header, footer {
         max-width: 1172px;
     }
 }
-/*Header*/
+/*----SECTION HEADER---------------------------------------*/
 header {
     width: auto;
     height: 100%;
 }
 #logo {
-    position: absolute;
-    z-index: 2;
-}
-@media only screen and (max-width:830px) {
-    #logo {
-        display: none;
-    }
-    .navbar {
-        height: initial !important;
-        padding-left: 5% !important;
-        
-    }
-    .navbar-toggler {
-        border: none !important;
-    }
+    display: none;
 }
 /*Alterações no navbar Bootstrap*/
 .bg-light {
     background-color: transparent !important;
-    background-image: url(../imgs/menu-bg.jpg);
+    background-image: none;
     background-repeat: no-repeat;
     background-position: 50.1% 0;
     z-index: 1;
 }
+.navbar-toggler {
+    border: none !important;
+}
 .navbar {
     text-transform: uppercase;
     align-items: center;
-    padding-left: 27%;
-    height: 78px;
+    height: initial !important;
+    padding-left: 5% !important;
     font-size: 17px;
     font-weight: 500;
     letter-spacing: 1.4px;
@@ -109,29 +112,87 @@ header {
 .nav-item {
     padding-right: 15px;
 }
+/*For tablet */
+@media only screen and (min-width: 600px) {
+    #logo {
+        display: none;
+    }
+}
+/*For desktop*/
+@media only screen and (min-width: 769px) {
+    #logo {
+        display: initial;
+        position: absolute;
+        z-index: 2;
+    }
+    .bg-light {
+        background-image: url(../imgs/menu-bg.jpg);
+    }
+    .navbar {
+        padding-left: 27% !important;
+        height: 78px !important;
+    }
+}
 /*Banner-topo*/
 .banner-principal {
-    height: 810px;
+    height: 768px;
 }
 .bg-header {
     background-image: url(../imgs/banner-principal.jpg);
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: 0% 0%;
     height: 100%;
 }
 .content-banner {
     padding: 20% 0 0 0%;
     display: block;
-    max-width: 35rem;
+    max-width: 27rem;
 }
+#logo-mobile {
+    float: right;
+    padding: 8px;
+    max-width: 100px;
+}
+/*mobile first*/
 .btn-scrooll-banner {
     position: absolute;
-    top: 83%;
-    left: 46%;
+    top: 63%;
+    left: 40%;
 }
-/*Section SERVICOS*/
+/*For tablets */
+@media only screen and (min-width: 600px) {
+    .content-banner {
+        max-width: 27rem;
+    }
+    .banner-principal {
+        height: 810px;
+    }
+    .bg-header {
+        background-position: center top;
+    }
+    .btn-scrooll-banner {
+        top: 83%;
+        left: 46%;
+    }
+}
+/*For desktop*/
+@media only screen and (min-width: 769px) {
+    .banner-principal {
+        height: 810px;
+    }
+    .bg-header {
+        background-position: center top;
+    }
+    .btn-scrooll-banner {
+        top: 83%;
+        left: 46%;
+    }
+    #logo-mobile {
+        display: none;
+    }
+}
+/*----SECTION SERVICOS---------------------------------------*/
 .servicos {
-    margin-top: 10px;
     margin-bottom: 80px;
 }
 .servicos .container div{
@@ -140,17 +201,13 @@ header {
 }
 .carousel {
     max-width: 900px;
-    padding: 10px;
+    padding: 0px;
     margin: 30px auto;
 }
 .titulo-servicos {
     padding-top: 200px;
 }
-@media only screen and (max-width: 823px) {
-    .carousel, .owl-next, .owl-prev {
-        display: none;
-    }
-}
+
 .img-servicos {
     width: 299px;
     height: 349px;
@@ -161,6 +218,7 @@ header {
     display: block;
     text-align: center;
 }
+
 .mask-img-servicos {
     width: 299px;
     height: 349px;
@@ -176,6 +234,25 @@ header {
 .mask-img-servicos:not(:hover) {
     animation-name: animacao-out;
     animation-duration: 0.5s;
+}
+.texto1 {
+    display: block;
+    text-align: center;
+    opacity: 1;
+    padding-top: 200px;
+}
+.mask-img-servicos:hover .texto1 {
+    opacity: 0;
+    padding: 0;
+}
+.texto2 {
+    display: block;
+    text-align: center;
+    opacity: 0;
+}
+.mask-img-servicos:hover .texto2 {
+    opacity: 1;
+    padding: 0 30px;
 }
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes animacao-in {
@@ -225,6 +302,7 @@ header {
   }
 /* alterações no btn prev e next originais do owl carousel 2 */
 .owl-prev, .owl-next{
+    display: none;
     color: transparent !important;
     width: 82px;
     height: 82px;
@@ -251,5 +329,65 @@ header {
  .owl-next::before {
     background-image: url(../imgs/btn-servicos-carousel-right.png);
  }
- 
+ .carousel-mobile {
+    padding-left: 9%;
+}
 
+@media only screen and (min-width: 600px) {
+    .carousel-mobile {
+        padding-left: 4%;
+    }
+}
+@media only screen and (min-width: 769px) {
+    .carousel, .owl-next, .owl-prev {
+        display: initial;
+    }
+    .carousel {
+        padding: 10px;
+        
+    }
+    
+} 
+/*----SECTION A EMPRESA---------------------------------------*/
+.a-empresa {
+    height: 1085px;
+    margin-bottom: 10%;
+}
+.bg-a-empresa {
+    background-image: url(../imgs/bg-a-empresa.jpg);
+    background-repeat: no-repeat;
+    background-position: 70% 0%;
+    height: 100%;
+}
+#title-a-empresa {
+    padding: 50% 0 0 5%;
+}
+.content-a-empresa {
+    padding: 5% 0 0 0%;
+    display: block;
+    max-width: 27rem;
+}
+@media only screen and (min-width: 600px) {
+    .bg-a-empresa {
+        background-position: center top;
+    }
+    #title-a-empresa {
+        padding: 20% 0 0 35%;
+    }
+    .content-a-empresa {
+        max-width: 55rem;
+        padding: 5% 0 0% 46%;
+    }
+}
+@media only screen and (min-width: 769px) {
+    .bg-a-empresa {
+        background-position: center top;
+    }
+    #title-a-empresa {
+        padding: 12% 0 0 41%;
+    }
+    .content-a-empresa {
+        max-width: 100%;
+        padding: 5% 0 0% 50%;
+    }
+}
