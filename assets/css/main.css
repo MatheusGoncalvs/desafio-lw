@@ -50,7 +50,9 @@ section, header, footer {
     color: #fff;
 }
 h3 {
-    font-size: 20px;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
 }
 .font-h3-black {
     font-size: 40px;
@@ -211,20 +213,19 @@ header {
 .img-servicos {
     width: 299px;
     height: 349px;
-    background-image: url(../imgs/img2-servicos-carousel.png);
+    background-image: url(../imgs/servicos-img-without-mask.png);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 95% 95%;
     display: block;
     text-align: center;
 }
-
 .mask-img-servicos {
     width: 299px;
     height: 349px;
 }
 .mask-img-servicos:hover {
-    background-image: url(../imgs/img1-servicos-carousel.png);
+    background-image: url(../imgs/servicos-img-mask.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 95% 95%;
@@ -448,3 +449,71 @@ header {
    }
 }
 /*----SECTION NOSSAS UNIDADES---------------------------------------*/
+.nossas-unidades {
+    background-color: #fff;
+    padding-bottom: 100px;
+}
+.detalhe-nossas-unidades {
+    background-image: url(../imgs/detalhe-info-unidades.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 8px;
+    margin-bottom: 50px;
+}
+.escritorio1 {
+    background-image: url(../imgs/titulo-escritorio1.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 316px;
+    height: 49px;
+    margin-top: 13%;
+    padding-top: 10px; 
+    display: block;
+    text-align: center;
+}
+.maps-area {
+    background-image: url(../imgs/maps-area.jpg);
+    background-repeat: no-repeat;
+    background-position: 2.5% top;
+    max-width: 800px;
+    height: 598px;
+}
+.content-escritorio {
+    padding-top: 5%;
+    padding-left: 10%;
+}
+/*----SECTION LINKS ÚTEIS---------------------------------------*/
+.links-uteis {
+    margin-bottom: 100px;
+}
+.bg-links-uteis {
+    background-image: url(../imgs/bg-links-uteis.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100%;
+    height: 424px;
+}
+.titulo-links-uteis {
+    padding: 50px 0px;
+    display: block;
+    text-align: center;
+}
+.links {
+    margin: 10px;
+}
+.carousel-links-uteis {
+    display: flex;
+}
+/*----SECTION FALE CONOSCO---------------------------------------*/
+.fale-conosco {
+    margin-bottom: 100px;
+}
+.forms-fale {
+    justify-content: center;
+}
+.inputs {
+    margin-bottom: 20px;
+}
+.btn-fale {
+    margin-top: 20px;
+}
