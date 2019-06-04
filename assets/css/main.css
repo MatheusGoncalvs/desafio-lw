@@ -29,6 +29,9 @@ a, a:hover{
     color: #fff;
     text-decoration: none;
 }
+ul, li {
+    list-style: none;
+}
 section, header, footer {
     position: relative;
     display: block;
@@ -55,14 +58,14 @@ h3 {
     font-weight: 600;
 }
 .font-h3-black {
-    font-size: 40px;
+    font-size: 30px;
     color: #333;
     text-transform: uppercase;
     font-weight: 500;
     line-height: 47px;
 }
 .font-h3 {
-    font-size: 40px;
+    font-size: 30px;
     color: #fff;
     text-transform: uppercase;
     font-weight: 500;
@@ -73,6 +76,17 @@ h3 {
     color: white;
     font-size: 15px;
 }
+.font-h4-dark {
+    color:#333;
+    font-size: 20px;
+    text-transform: none;
+}
+.font-h5 {
+    color: #C3AFA8;
+    font-size: 16px;
+    text-transform: none;
+}
+
 .tem-bg {
     background-image: url(../imgs/main-bg.jpg);
     background-repeat: no-repeat;
@@ -121,7 +135,7 @@ header {
     }
 }
 /*For desktop*/
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 825px) {
     #logo {
         display: initial;
         position: absolute;
@@ -163,8 +177,11 @@ header {
 }
 /*For tablets */
 @media only screen and (min-width: 600px) {
+    .font-h2 {
+        font-size: 16px;
+    }
     .content-banner {
-        max-width: 27rem;
+        max-width: 23rem;
     }
     .banner-principal {
         height: 810px;
@@ -178,7 +195,13 @@ header {
     }
 }
 /*For desktop*/
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 824px) {
+    .font-h2 {
+        font-size: 20px;
+    }
+    .content-banner {
+        max-width: 35rem;
+    }
     .banner-principal {
         height: 810px;
     }
@@ -202,7 +225,7 @@ header {
     text-align: center !important;
 }
 .carousel {
-    max-width: 900px;
+    max-width: 310px;
     padding: 0px;
     margin: 30px auto;
 }
@@ -330,24 +353,20 @@ header {
  .owl-next::before {
     background-image: url(../imgs/btn-servicos-carousel-right.png);
  }
- .carousel-mobile {
-    padding-left: 4%;
-}
+ 
 @media only screen and (min-width: 410px) {
-    .carousel-mobile {
-        padding-left: 10%;
+}
+@media only screen and (min-width: 643px) {
+    .carousel {
+        max-width: 600px;
     }
 }
-@media only screen and (min-width: 600px) {
-    .carousel-mobile {
-        padding-left: 4%;
-    }
-}
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 825px) {
     .carousel, .owl-next, .owl-prev {
         display: initial;
     }
     .carousel {
+        max-width: 900px;
         padding: 10px;
     }
     
@@ -364,14 +383,17 @@ header {
     height: 100%;
 }
 #title-a-empresa {
-    padding: 50% 0 0 5%;
+    padding: 40% 0 0 5%;
 }
 .content-a-empresa {
     padding: 5% 0 0 0%;
     display: block;
-    max-width: 27rem;
+    max-width: 40rem;
 }
 @media only screen and (min-width: 600px) {
+    .a-empresa .container {
+        max-width: none;
+    }
     .bg-a-empresa {
         background-position: center top;
     }
@@ -391,13 +413,16 @@ header {
         padding: 12% 0 0 41%;
     }
     .content-a-empresa {
-        max-width: 100%;
+        max-width: 1200px;
         padding: 5% 0 0% 50%;
     }
 }
 /*----SECTION INFORMATIVOS---------------------------------------*/
 .informativos {
     margin-bottom: 5rem;
+}
+.informativos .container {
+    max-width: none;
 }
 .titulo-informativos {
     display: block;
@@ -414,18 +439,18 @@ header {
 .content-informativos {
     padding: 20px;
     margin-bottom: 30px;
+    justify-content: center;
 }
 .texto-informativos {
     max-width: 200px;
-    margin-left: 30px;
+    margin-left: 20px;
     padding-top: 190px;
 }
 .block {
     padding-bottom: 15px;
 }
-.btn-informativos {
-    display: block;
-    padding-left: 12%;
+.btn-default {
+    margin-top: 5%;
 }
 .btn-default {
     width: 200px;
@@ -436,11 +461,14 @@ header {
     background-color: #FF9400;
 }
 @media only screen and (min-width: 600px) {
+    .informativos .container {
+        max-width: 1172px;
+    }
    .btn-informativos {
         padding-left: 42%;
    }
    .texto-informativos {
-        margin-left: 12px;
+        margin-left: 4px;
    }
 }
 @media only screen and (min-width: 769px) {
@@ -453,12 +481,18 @@ header {
     background-color: #fff;
     padding-bottom: 100px;
 }
-.detalhe-nossas-unidades {
+.nossas-unidades .container {
+    max-width: none;
+}
+.detalhe-horizontal {
     background-image: url(../imgs/detalhe-info-unidades.jpg);
     background-repeat: no-repeat;
     background-position: center top;
     height: 8px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+.lado-nossa {
+    margin-right: 1%;
 }
 .escritorio1 {
     background-image: url(../imgs/titulo-escritorio1.jpg);
@@ -478,9 +512,25 @@ header {
     max-width: 800px;
     height: 598px;
 }
+.col-md-7 {
+    max-width: 100%;
+    flex: 100%; 
+}
 .content-escritorio {
     padding-top: 5%;
     padding-left: 10%;
+}
+@media only screen and (min-width: 769px) {
+    .col-md-7 {
+        max-width: 58.333333%;
+        flex: 58.333333%; 
+    }
+    .lado-nossa {
+        margin-right: 0%;
+    }
+    .nossas-unidades .container {
+        max-width: 1172px;
+    }
 }
 /*----SECTION LINKS ÚTEIS---------------------------------------*/
 .links-uteis {
@@ -516,4 +566,84 @@ header {
 }
 .btn-fale {
     margin-top: 20px;
+}
+/*----SECTION PARCEIROS---------------------------------------*/
+.parceiros {
+    background-color: #fff;
+}
+.titulo-parceiros {
+    margin: 25px 0px;
+    text-align: center;
+}
+.detalhe-horizontal-parceiros {
+    background-image: url(../imgs/detalhe-info-unidades.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 8px;
+}
+.marcas {
+    margin: 6%;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media only screen and (min-width: 824px) {
+    .titulo-parceiros {
+        float: left;
+    }
+    .marcas {
+        margin: 3%;
+    }
+}
+/*----SECTION MIDIAS---------------------------------------*/
+.midias {
+    margin: 10px 0px;
+}
+.siga-midias {
+    margin-bottom: 15px;
+}
+.titulo-midias {
+    display: block;
+    text-align: center;
+    margin: 20px 0px;
+}
+.content-redes-sociais {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+.icone-redes-sociais {
+    margin: 5px;
+}
+.fotos {
+    background-image: url(../imgs/imgs-fotos-footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 250px;
+    margin-bottom: 2px;
+}
+/*----SECTION FOOTER---------------------------------------*/
+.footer {
+    align-items: center !important;
+    overflow: hidden;
+}
+.resumo-footer {
+    padding: 20px;
+    min-height: 279px;
+    background-color: #2E1916;
+}
+.copyright {
+    display: flex;
+    align-items: center;
+    height: 66px;
+}
+.list-footer li:first-child .font-h2{
+    color: #FF9400;
+}
+#marca-rodape {
+    float: right;
+    margin: 10px;
 }
