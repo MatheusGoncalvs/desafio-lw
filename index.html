@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="owl/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="owl/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
 <body class="tem-bg">
@@ -38,16 +39,16 @@
                             <a class="nav-link" href="#servicos">Serviços</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Informativos</a>
+                            <a class="nav-link" href="#informativos">Informativos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Nossas unidades</a>
+                            <a class="nav-link" href="#nossas-unidades">Nossas unidades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Links úteis</a>
+                            <a class="nav-link" href="#links-uteis">Links úteis</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
+                            <a class="nav-link" href="#contato">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -71,12 +72,12 @@
                 </span>
             </a>
         </section>
-        <section class="servicos" id="servicos">
+        <section id="servicos" class="servicos">
             <div class="container">
                 <div class="row">
                     <h3 class="font-h3-black">Serviços</h3>
                 </div>
-                <div class="row owl-carousel carousel carousel-mobile">
+                <div id="servicos-carousel" class="row owl-carousel carousel carousel-mobile">
                     <a href="#servicos">
                         <div class="img-servicos">
                             <div class="mask-img-servicos">
@@ -140,7 +141,7 @@
                 </div>
             </div>
         </section>
-        <section class="a-empresa" id="a-empresa">
+        <section id="a-empresa" class="a-empresa">
             <div class="bg-a-empresa">
                 <div class="container">
                     <div class="row">
@@ -169,7 +170,7 @@
                 </div>
             </div>
         </section>
-        <section class="informativos">
+        <section id="informativos" class="informativos">
             <div class="container">
                 <div class="row titulo-informativos">
                     <h3 class="font-h3-black">Informativos</h3>
@@ -200,7 +201,7 @@
                 </div>
             </div>
         </section>
-        <section class="nossas-unidades">
+        <section id="nossas-unidades" class="nossas-unidades">
             <div class="detalhe-horizontal"></div>
             <div class="container">
                 <div class="row titulo-informativos">
@@ -230,19 +231,59 @@
                         </div>
                     </div>
                     <div class="col-md-7 maps-area">
+                        <div class="bg-map-detalhe">
+                            <div class="map" id="map">
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="links-uteis">
+        <section id="links-uteis" class="links-uteis">
             <div class="bg-links-uteis">
                 <div class="container">
                     <div class="row titulo-links-uteis">
                         <h3 class="font-h3">Links Úteis</h3>
                     </div>
-                    <div class="carousel-links-uteis">
+                    <div id="links-uteis-carousel" class="carousel-links-uteis owl-carousel owl-theme">
                         <div class="links">
-                            <a href="#">
+                            <a href="#links-uteis">
+                                <img src="assets/imgs/img-links-uteis.jpg">
+                            </a>
+                        </div>
+                        <div class="links">
+                            <a href="#links-uteis">
+                                <img src="assets/imgs/img-links-uteis.jpg">
+                            </a>
+                        </div>
+                        <div class="links">
+                            <a href="#links-uteis">
+                                <img src="assets/imgs/img-links-uteis.jpg">
+                            </a>
+                        </div>
+                        <div class="links">
+                            <a href="#links-uteis">
+                                <img src="assets/imgs/img-links-uteis.jpg">
+                            </a>
+                        </div>
+                        <div class="links">
+                            <a href="#links-uteis">
+                                <img src="assets/imgs/img-links-uteis.jpg">
+                            </a>
+                        </div>
+                        <div class="links">
+                            <a href="#links-uteis">
+                                <img src="assets/imgs/img-links-uteis.jpg">
+                            </a>
+                        </div>
+                        <div class="links">
+                            <a href="#links-uteis">
+                                <img src="assets/imgs/img-links-uteis.jpg">
+                            </a>
+                        </div>
+                        <div class="links">
+                            <a href="#links-uteis">
                                 <img src="assets/imgs/img-links-uteis.jpg">
                             </a>
                         </div>
@@ -250,7 +291,7 @@
                 </div>
             </div>
         </section>
-        <section class="fale-conosco">
+        <section id="contato" class="fale-conosco">
             <div class="container">
                 <div class="row titulo-links-uteis">
                     <h3 class="font-h3-black">Fale conosco</h3>
@@ -262,13 +303,14 @@
                         <input type="text" class="form-control inputs" placeholder="Telefone:">
                     </div>
                     <div class="col-sm-5">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"
+                            placeholder="Mensagem:"></textarea>
                     </div>
                     <input type="submit" class="btn btn-default btn-fale" value="ENVIAR">
                 </div>
             </div>
         </section>
-        <section class="parceiros">
+        <section id="parceiros" class="parceiros">
             <div class="detalhe-horizontal-parceiros"></div>
             <div class="container">
                 <div class="titulo-parceiros">
@@ -289,7 +331,7 @@
                     </div>
                 </div>
         </section>
-        <section class="midias">
+        <section id="midias" class="midias">
             <div class="container">
                 <div class="siga-midias">
                     <div class="row titulo-midias">
@@ -312,9 +354,9 @@
                 </div>
             </div>
         </section>
-        <footer class="footer">
+        <footer id="footer" class="footer">
             <div class="row resumo-footer">
-                <div class="col-sm-3">
+                <div class="col-sm-2 marca-resumos">
                     <img src="assets/imgs/marca-footer-brown.jpg">
                 </div>
                 <div class="col-sm-2">
@@ -324,32 +366,32 @@
                                 <h3 class="font-h2">Home</h3>
                             </li>
                         </a>
-                        <a href="#">
+                        <a href="#a-empresa">
                             <li>
-                                <h3 class="font-h5">A empresa</h3>
+                                <h3 class="font-h5">A Empresa</h3>
                             </li>
                         </a>
-                        <a href="#">
+                        <a href="#servicos">
                             <li>
                                 <h3 class="font-h5">Seviços</h3>
                             </li>
                         </a>
-                        <a href="#">
+                        <a href="#informativos">
                             <li>
                                 <h3 class="font-h5">Informativos</h3>
                             </li>
                         </a>
-                        <a href="#">
+                        <a href="#nossas-unidades">
                             <li>
                                 <h3 class="font-h5">Nossas Unidades</h3>
                             </li>
                         </a>
-                        <a href="#">
+                        <a href="#parceiros">
                             <li>
                                 <h3 class="font-h5">Parceiros</h3>
                             </li>
                         </a>
-                        <a href="#">
+                        <a href="#contato">
                             <li>
                                 <h3 class="font-h5">Contato</h3>
                             </li>
@@ -375,6 +417,9 @@
                         </li>
                     </ul>
                 </div>
+                <div class="col-sm-2 coluna-alinhar-resumos">
+
+                </div>
                 <div class="col-sm-2">
                     <ul class="list-footer">
                         <li>
@@ -394,13 +439,13 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-sm-3">
                     <ul class="list-footer">
                         <li>
                             <h3 class="font-h2">Agende um horário</h3>
                         </li>
                         <li>
-                            <h3 class="font-h5">(00) 0 0000-0000</h3>
+                            <h3 class="font-h2">(00) 0 0000-0000</h3>
                         </li>
                     </ul>
                 </div>
@@ -409,7 +454,9 @@
                 <div class="copyright">
                     <p>2019 Copyright - Todos os direitos reservados</p>
                 </div>
-                <img id="marca-rodape" src="assets/imgs/marca-rodape-ult.jpg">
+                <a href="http://www.linceweb.com.br" target="_blank">
+                    <img id="marca-rodape" src="assets/imgs/marca-rodape-ult.jpg">
+                </a>
             </div>
         </footer>
     </main>
@@ -427,31 +474,10 @@
         crossorigin="anonymous"></script>
     <script src="owl/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
     <script src="owl/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-    <!--Carousel-->
-    <script type="text/javascript">
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            autoplay: true,
-            autoplayTimeout: 3000,
-            autoplayHoverPause: true,
-            margin: 10,
-            nav: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 1
-                },
-                645: {
-                    items: 2
-                },
-                1000: {
-                    items: 3
-                }
-            }
-        })
-    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZQCFsefID9xmE9R0wOmcfs_jmJrLERk4&callback=initMap">
+        </script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
