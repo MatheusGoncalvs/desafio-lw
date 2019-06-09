@@ -40,7 +40,7 @@ $('#servicos-carousel').owlCarousel({
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
     margin: 10,
-    nav:true,
+    nav: true,
     responsive: {
         0: {
             items: 1
@@ -63,8 +63,8 @@ $('#links-uteis-carousel').owlCarousel({
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
     margin: 30,
-    nav:false,
-    dots:true,
+    nav: false,
+    dots: true,
     responsive: {
         0: {
             items: 1
@@ -84,31 +84,36 @@ $('#links-uteis-carousel').owlCarousel({
 /*-----------------------------------
     * ONE PAGE SCROLLING
     *-----------------------------------*/
-    // Select all links with hashes
-    $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').not('[data-toggle="tab"]').on('click', function (event) {
-        // On-page links
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            // Figure out element to scroll to
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            // Does a scroll target exist?
-            if (target.length) {
-                // Only prevent default if animation is actually gonna happen
-                event.preventDefault();
-                $('html, body').animate({
-                    scrollTop: target.offset().top
-                }, 1000, function () {
-                    // Callback after animation
-                    // Must change focus!
-                    var $target = $(target);
-                    $target.focus();
-                    if ($target.is(":focus")) { // Checking if the target was focused
-                        return false;
-                    } else {
-                        $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                        $target.focus(); // Set focus again
-                    };
-                });
-            }
+// Select all links with hashes
+$('a[href*="#"]').not('[href="#"]').not('[href="#0"]').not('[data-toggle="tab"]').on('click', function (event) {
+    // On-page links
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        // Figure out element to scroll to
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        // Does a scroll target exist?
+        if (target.length) {
+            // Only prevent default if animation is actually gonna happen
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 1000, function () {
+                // Callback after animation
+                // Must change focus!
+                var $target = $(target);
+                $target.focus();
+                if ($target.is(":focus")) { // Checking if the target was focused
+                    return false;
+                } else {
+                    $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                    $target.focus(); // Set focus again
+                };
+            });
         }
-    });
+    }
+});
+/*Máscara de form*/
+$(function () {
+    var $telefone = $("#telefone");
+    $telefone.mask('00 0 0000-0000', { reverse: true });
+});

@@ -65,14 +65,14 @@ h3 {
     margin-bottom: 2px;
 }
 .font-h3-black {
-    font-size: 30px;
+    font-size: 35px;
     color: #333;
     text-transform: uppercase;
     font-weight: 500;
     line-height: 47px;
 }
 .font-h3 {
-    font-size: 30px;
+    font-size: 35px;
     color: #fff;
     text-transform: uppercase;
     font-weight: 500;
@@ -284,6 +284,7 @@ header {
 .mask-img-servicos:hover .texto2 {
     opacity: 1;
     padding: 0 30px;
+    margin-top: 27px;
 }
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes animacao-in {
@@ -431,7 +432,7 @@ header {
         background-position: center top;
     }
     #title-a-empresa {
-        padding: 12% 0 0 41%;
+        padding: 120px 0 0 41%;
     }
     .content-a-empresa {
         max-width: 1200px;
@@ -563,7 +564,7 @@ header {
     }
     .lado-nossa {
         margin-right: 0%;
-        padding-left: 50px;
+        padding-left: 120px;
     }
 }
 /*----SECTION LINKS ÚTEIS---------------------------------------*/
@@ -656,9 +657,11 @@ header {
         display: block;
         margin-top: 35px;
         float: left;
+        margin-right: 75px;
     }
     .marcas {
         margin: 3%;
+        margin-right: 46px;
     }
 }
 /*----SECTION MIDIAS---------------------------------------*/
@@ -696,6 +699,26 @@ header {
     height: 250px;
     margin-bottom: 2px;
 }
+.copyright p {
+    margin: 0px;
+}
+@media only screen and (min-width: 824px) {
+    .midias {
+        margin: 0px;
+    }
+    .siga-midias {
+        margin: 30px;
+    }
+    .titulo-midias {
+        float: left;
+        margin-left: 23rem;
+        margin-top: 3px;
+    }
+    .content-redes-sociais {
+        padding-bottom: 0px;
+        margin: 0px;
+    }
+}
 /*----SECTION FOOTER---------------------------------------*/
 .footer {
     align-items: center !important;
@@ -725,7 +748,7 @@ header {
 }
 #marca-rodape {
     float: right;
-    margin: 10px;
+    margin-top: 20px;
 }
 @media only screen and (min-width: 410px) {
 }

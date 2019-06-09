@@ -296,18 +296,22 @@
                 <div class="row titulo-links-uteis">
                     <h3 class="font-h3-black">Fale conosco</h3>
                 </div>
-                <div class="row forms-fale">
-                    <div class="col-sm-5">
-                        <input type="text" class="form-control inputs" placeholder="Nome:">
-                        <input type="email" class="form-control inputs" placeholder="Email:">
-                        <input type="text" class="form-control inputs" placeholder="Telefone:">
+                <form action="#contato">
+                    <div class="row forms-fale">
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control inputs" placeholder="Nome:" name="nome" id="nome">
+                            <input type="email" class="form-control inputs" placeholder="Email:" name="email"
+                                id="email">
+                            <input type="text" class="form-control inputs" placeholder="Telefone:" name="telefone"
+                                id="telefone">
+                        </div>
+                        <div class="col-sm-5">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"
+                                placeholder="Mensagem:"></textarea>
+                        </div>
+                        <input type="submit" class="btn btn-default btn-fale" value="ENVIAR">
                     </div>
-                    <div class="col-sm-5">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"
-                            placeholder="Mensagem:"></textarea>
-                    </div>
-                    <input type="submit" class="btn btn-default btn-fale" value="ENVIAR">
-                </div>
+                </form>
             </div>
         </section>
         <section id="parceiros" class="parceiros">
@@ -478,6 +482,8 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZQCFsefID9xmE9R0wOmcfs_jmJrLERk4&callback=initMap">
         </script>
     <script src="assets/js/main.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
 </body>
 
 </html>
