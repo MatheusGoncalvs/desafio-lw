@@ -261,7 +261,7 @@ header {
     height: 349px;
 }
 .mask-img-servicos:hover {
-    background-image: url(../imgs/servicos-img-mask.jpg);
+    background-image: url(../imgs/servicos-img-mask.png);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 95% 95%;
@@ -295,13 +295,13 @@ header {
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes animacao-in {
     0% {
-        background-image: url(../imgs/img2-servicos-carousel.png);
+        background-image: url(../imgs/servicos-img-without-mask.png);
         background-position: center top;
         background-repeat: no-repeat;
         background-size: 95% 95%;
     }
     100% {
-        background-image: url(../imgs/img1-servicos-carousel.png);
+        background-image: url(../imgs/servicos-img-mask.png);
         background-position: center top;
         background-repeat: no-repeat;
         background-size: 95% 95%;
@@ -311,13 +311,13 @@ header {
   /* Standard syntax */
   @keyframes animacao-in {
     0% {
-        background-image: url(../imgs/img2-servicos-carousel.png);
+        background-image: url(../imgs/servicos-img-without-mask.png);
         background-position: center top;
         background-repeat: no-repeat;
         background-size: 95% 95%;
     }
     100% {
-        background-image: url(../imgs/img1-servicos-carousel.png);
+        background-image: url(../imgs/servicos-img-mask.png);
         background-position: center top;
         background-repeat: no-repeat;
         background-size: 95% 95%;
@@ -325,13 +325,13 @@ header {
   }
   @-webkit-keyframes animacao-out {
     0% {
-        background-image: url(../imgs/img1-servicos-carousel.png);
+        background-image: url(../imgs/servicos-img-mask.png);
         background-position: center top;
         background-repeat: no-repeat;
         background-size: 95% 95%;
     }
     100% {
-        background-image: url(../imgs/img2-servicos-carousel.png);
+        background-image: url(../imgs/servicos-img-without-mask.png);
         background-position: center top;
         background-repeat: no-repeat;
         background-size: 95% 95%;
@@ -340,13 +340,13 @@ header {
   /* Standard syntax */
   @keyframes animacao-out {
     0% {
-        background-image: url(../imgs/img1-servicos-carousel.png);
+        background-image: url(../imgs/servicos-img-mask.png);
         background-position: center top;
         background-repeat: no-repeat;
         background-size: 95% 95%;
     }
     100% {
-        background-image: url(../imgs/img2-servicos-carousel.png);
+        background-image: url(../imgs/servicos-img-without-mask.png);
         background-position: center top;
         background-repeat: no-repeat;
         background-size: 95% 95%;
